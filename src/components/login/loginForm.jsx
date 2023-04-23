@@ -16,17 +16,14 @@ export default function LoginForm() {
             const errors = {};
             if (values.username === "") {
                 errors.username = 'username is required';
-                // console.log('errors' ,errors)
             }
 
             //TODO: is password is wrong
             if (values.password === "") {
                 errors.password = 'password is required';
-                // console.log('errors' ,errors)
             }
 
             if (Object.keys(errors).length === 0) {setIsButtonDisable(false)}
-            console.log('errors' ,Object.keys(errors).length)
             return errors;
         }
     })
