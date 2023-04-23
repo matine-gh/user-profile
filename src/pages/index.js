@@ -1,19 +1,16 @@
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import {useRouter} from "next/router";
 
-export default function Home() {
-
-  const [isLogin, setIsLogin] = useState(false);
+export default function Index() {
 
   const router = useRouter();
 
   useEffect(() => {
-    if(isLogin === false){
+    if(localStorage.getItem('loginData') === null){
       router.replace('/login')
+      console.log(localStorage.getItem('loginData'))
+    }else {
+      router.replace('/home')
     }
-  }, [isLogin]);
-
-  return (
-    <h1>you arent login (root index.js)</h1>
-  )
+  }, []);
 }
