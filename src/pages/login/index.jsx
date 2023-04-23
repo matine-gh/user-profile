@@ -3,7 +3,7 @@ import LoginForm from "@/components/login/loginForm";
 
 const containerStyles = "flex flex-col items-center justify-center " +
     "h-screen " +
-    "text-light-gray " +
+    "text-lighter-gray " +
     "bg-gradient-to-b from-primary-gray to-dark-gray";
 const headingStyles = "mb-12 text-primary-green text-6xl";
 

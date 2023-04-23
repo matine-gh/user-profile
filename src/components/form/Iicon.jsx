@@ -4,7 +4,7 @@ import {EyeIcon} from "@heroicons/react/24/outline";
 export default function Iicon (props) {
     const {id, showPassword, handleClick} = props;
     let icon = null;
-    const iconStyle = "inline h-6 w-6 mr-2 text-light-gray";
+    const iconStyle = "inline h-6 w-6 mr-2 text-lighter-gray";
 
     switch(id) {
         case "username":

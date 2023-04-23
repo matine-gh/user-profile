@@ -6,7 +6,7 @@ export default function Iinput(props) {
     const {id, formik} = props;
     const [showPassword, setShowPassword] = useState(false);
 
-    const labelStyles = "border-b-solid border-b-2 border-b-light-gray py-2.5";
+    const labelStyles = "border-b-solid border-b-2 border-b-lighter-gray py-2.5";
 
     function handleClick() {
         setShowPassword(!showPassword);

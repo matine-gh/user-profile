@@ -19,7 +19,8 @@ module.exports = {
     colors: {
       'dark-gray': '#202f46',
       'primary-gray': '#405069',
-      'light-gray': '#f9fafb',
+      'light-gray': '#94a3b8',
+      'lighter-gray': '#f9fafb',
 
       'error': '#3dbcb1',
 
@@ -29,7 +30,9 @@ module.exports = {
 
       'primary-green' : '#3dbcb1',
 
-      'inherit': 'inherit'
+      'inherit': 'inherit',
+
+      'red': '#dc2626'
     }
   },
   plugins: [],
