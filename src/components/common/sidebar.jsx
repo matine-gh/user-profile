@@ -60,7 +60,7 @@ export default function Sidebar() {
     ];
     return (
         <aside id="default-sidebar"
-               className="w-52 sm:border-t-2 border-light-gray text-lighter-gray transition-transform sm:translate-x-0"
+               className="w-52 sm:border-r-2 border-light-gray text-lighter-gray transition-transform sm:translate-x-0"
                aria-label="Sidebar">
             <div className="flex flex-col h-full px-3 py-4 overflow-y-auto bg-gray-50">
                 <ul className={"flex-1"}>
