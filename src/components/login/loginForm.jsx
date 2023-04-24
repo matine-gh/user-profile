@@ -2,15 +2,19 @@ import {useFormik} from "formik";
 import Ibutton from "@/components/common/Ibutton";
 import InputContainer from "@/components/form/inputContainer";
 import {useState} from "react";
+import {useRouter} from "next/router";
 
 export default function LoginForm() {
 
     const [isButtonDisable, setIsButtonDisable] = useState(true);
 
+    const router = useRouter();
+
     const formik = useFormik({
         initialValues: { username: "", password: "" },
         onSubmit: values => {
             localStorage.setItem('loginData', JSON.stringify(values));
+            router.replace('/home')
         },
         validate: values => {
             const errors = {};

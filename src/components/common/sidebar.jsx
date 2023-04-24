@@ -1,5 +1,4 @@
 import {
-    ArrowRightOnRectangleIcon,
     ChartBarIcon,
     Cog6ToothIcon,
     HomeIcon,
@@ -8,6 +7,7 @@ import {
     QuestionMarkCircleIcon,
     UserGroupIcon
 } from "@heroicons/react/20/solid";
+import LogOutButton from "@/components/common/logOutButton";
 
 export default function Sidebar() {
 
@@ -58,11 +58,6 @@ export default function Sidebar() {
             route: '/help'
         }
     ];
-    
-    function onLogOut() {
-        localStorage.removeItem("loginData");
-        console.log("remove local storage: ", localStorage.getItem("loginData"))
-    }
     return (
         <aside id="default-sidebar"
                className="w-52 sm:border-t-2 border-light-gray text-lighter-gray transition-transform sm:translate-x-0"
@@ -80,10 +75,8 @@ export default function Sidebar() {
                         )
                     }
                 </ul>
-                <a className={`inline-flex ${pseudoStyles}`} onClick={onLogOut}>
-                    LOG OUT
-                    <ArrowRightOnRectangleIcon className="h-6 w-6 ml-2" />
-                </a>
+
+                <LogOutButton pseudoStyles={pseudoStyles}/>
             </div>
         </aside>
     );
