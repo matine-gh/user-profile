@@ -35,7 +35,7 @@ export default function LoginForm() {
                 <InputContainer  id={'password'} formik={formik}/>
             </div>
 
-            <Ibutton type={'submit'} text={'LOG IN'} isButtonDisable={isButtonDisable}/>
+            <Ibutton type="submit" text={'LOG IN'} isButtonDisable={isButtonDisable}/>
 
         </form>
     );
