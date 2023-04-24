@@ -1,7 +1,7 @@
 import {useFormik} from "formik";
 import Ibutton from "@/components/common/Ibutton";
 import InputContainer from "@/components/form/inputContainer";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 
 export default function LoginForm() {
@@ -26,11 +26,17 @@ export default function LoginForm() {
             if (values.password === "") {
                 errors.password = 'password is required';
             }
-
-            if (Object.keys(errors).length === 0) {setIsButtonDisable(false)}
             return errors;
+
         }
     })
+    useEffect(() => {
+        if (formik.values.username !== formik.initialValues.username && formik.values.password !== formik.initialValues.password) {
+            setIsButtonDisable(false)
+        }else {
+            setIsButtonDisable(true)
+        }
+    }, [formik.values]);
 
     return (
         <form onSubmit={formik.handleSubmit} className="flex flex-col content-between h-2/6">
