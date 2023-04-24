@@ -22,7 +22,7 @@ module.exports = {
       'light-gray': '#94a3b8',
       'lighter-gray': '#f9fafb',
 
-      'error': '#3dbcb1',
+      'light-indigo' : '#c7d2fe',
 
       'dark-blue' : '#03b5d1',
       'primary-blue' : '#06b6d4',
@@ -30,9 +30,16 @@ module.exports = {
 
       'primary-green' : '#3dbcb1',
 
+      'error': '#3dbcb1',
+
+      'light-lime' : '#bef264',
+
+      'light-orange' : '#fb923c',
+
+      'light-rose' : '#fb7185',
+
       'inherit': 'inherit',
 
-      'red': '#dc2626'
     }
   },
   plugins: [],
