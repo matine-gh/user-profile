@@ -12,6 +12,7 @@ import {
 export default function Sidebar() {
 
     const iconStyles = "h-6 w-6 mr-2";
+    const pseudoStyles = "hover:text-primary-green hover:text-lg active:text-primary-green";
 
     const sidebarItems = [
         {
@@ -60,7 +61,7 @@ export default function Sidebar() {
     
     function onLogOut() {
         localStorage.removeItem("loginData");
-        console.log("clear: ", localStorage.getItem("loginData"))
+        console.log("remove local storage: ", localStorage.getItem("loginData"))
     }
     return (
         <aside id="default-sidebar"
@@ -70,7 +71,7 @@ export default function Sidebar() {
                 <ul className={"flex-1"}>
                     {
                         sidebarItems.map((item) =>
-                            <li key={item.id} className={"my-6"}>
+                            <li key={item.id} className={`my-6 ${pseudoStyles}`}>
                                 <a href={item.route} className={"inline-flex"}>
                                     {item.icon}
                                     {item.name}
@@ -79,7 +80,7 @@ export default function Sidebar() {
                         )
                     }
                 </ul>
-                <a className="inline-flex" onClick={onLogOut}>
+                <a className={`inline-flex ${pseudoStyles}`} onClick={onLogOut}>
                     LOG OUT
                     <ArrowRightOnRectangleIcon className="h-6 w-6 ml-2" />
                 </a>
