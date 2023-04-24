@@ -14,8 +14,8 @@ export default function LogOutButton(props) {
 
     return (
         <a className={`inline-flex ${pseudoStyles}`} onClick={onLogOut}>
+            <ArrowRightOnRectangleIcon className="h-6 w-6 mr-2" />
             LOG OUT
-            <ArrowRightOnRectangleIcon className="h-6 w-6 ml-2" />
         </a>
     );
 }
