@@ -14,6 +14,16 @@ module.exports = {
       },
       boxShadow: {
         'primary': '0 0px 15px 3px rgba(249, 250, 251, 0.3)',
+        'indigo': '0 0px 15px 3px #c7d2fe',
+        'lime': '0 0px 15px 3px #bef264',
+        'orange': '0 0px 15px 3px #fb923c',
+        'rose': '0 0px 15px 3px #fb7185',
+      },
+      gridTemplateColumns: {
+        'content': 'repeat(2, 30%)',
+      },
+      gridTemplateRows: {
+        'content': 'repeat(2, 30%)',
       }
     },
     colors: {
