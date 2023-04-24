@@ -7,7 +7,7 @@ export default function Itoggle() {
 
     const buttonIconStyles = "bg-non disabled:invisible";
     const iconStyles = `h-6 w-6 text-dark-gray`;
-    const toggleStyles = "flex justify-between bg-primary-green h-8 w-15 py-1 px-2.5 rounded-full";
+    const toggleStyles = "flex justify-between bg-lighter-gray h-8 w-15 py-1 px-2.5 rounded-full";
 
 
     function handleClick() {
