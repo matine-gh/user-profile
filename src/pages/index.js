@@ -8,7 +8,6 @@ export default function Index() {
   useEffect(() => {
     if(localStorage.getItem('loginData') === null){
       router.replace('/login')
-      console.log(localStorage.getItem('loginData'))
     }else {
       router.replace('/home')
     }
